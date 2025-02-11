@@ -1,0 +1,13 @@
+.mobileNavbar {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .mobileNavbar {
+    display: block;
+  }
+
+  .desktopNavbar {
+    display: none;
+  }
+}

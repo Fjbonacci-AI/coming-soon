@@ -1,0 +1,98 @@
+:root {
+  --background: #ffffff;
+  --sec-background: #ededed;
+  --foreground: #191919;
+  --accent: #864dd9;
+
+  --secondary-text: #acacac;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geologica);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.boxWrapper {
+  /* background: #000; */
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  color: var(--secondary-text);
+  font-weight: 200;
+}
+
+.ctaBtn {
+  background: white;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid var(--accent);
+  width: fit-content;
+  min-width: fit-content;
+  color: var(--accent);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.ctaBtn > .ctaArrow {
+  font-size: 20px;
+}

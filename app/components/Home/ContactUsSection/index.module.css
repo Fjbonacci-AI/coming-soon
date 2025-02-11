@@ -1,0 +1,96 @@
+.mainDiv {
+  width: 100%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header > p {
+  max-width: 60%;
+}
+
+.contactWrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 40px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.contactImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.contactForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 976px) {
+  .contactWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contactImage {
+    display: none;
+  }
+}
+
+.colspan {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+  .contactForm {
+    grid-template-columns: 1fr;
+  }
+
+  .colspan {
+    grid-column: span 1;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputWrapper > span {
+  font-size: 14px;
+}
+
+.inputWrapper > label {
+  border-radius: 6px;
+  border: 1px solid var(--secondary-text);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.inputWrapper > label > input,
+.inputWrapper > label > textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.submitBtn {
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+.navbar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 20px 60px;
+  border: 1px solid var(--sec-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  background: white;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.navLinks > li > a {
+  transition: 0.3s;
+}
+
+.navLinks > li > a:hover {
+  color: var(--accent);
+}

@@ -1,0 +1,56 @@
+.mainDiv {
+  width: 100%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header > p {
+  max-width: 60%;
+}
+
+.teamMembers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.teamMember > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.teamMemberDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.teamMemberDetails > span {
+  font-size: 16px;
+  color: var(--secondary-text);
+  font-weight: 300;
+}
+
+.teamMemberDetails :nth-child(2) {
+  font-weight: 500;
+}

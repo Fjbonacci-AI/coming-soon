@@ -1,0 +1,81 @@
+.mainDiv {
+  width: 100%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header > p {
+  max-width: 60%;
+}
+
+.testimonials {
+  background-color: var(--sec-background);
+  border-radius: 20px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+@media screen and (max-width: 976px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
+
+.highlightText {
+  color: var(--accent);
+}
+
+.testimonialsLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+.testimonialText {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.testimonialWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonialWrapper > hr {
+  margin-top: 20px;
+}
+
+.testimonialFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pointers {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.secondaryText {
+  color: var(--secondary-text);
+  font-weight: 400;
+}
