@@ -1,0 +1,63 @@
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header > p {
+  max-width: 60%;
+}
+
+.subscriptionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.plan {
+  border: 2px solid var(--secondary-text);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.highlight {
+  border: 2px solid #864dd9;
+}
+
+.plan > img {
+  width: 70%;
+  height: auto;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: 800;
+  color: #864dd9;
+}
+
+.planFrequency {
+  font-size: 18px;
+  font-weight: 400;
+  color: #864dd9;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--secondary-text);
+  text-align: center;
+}

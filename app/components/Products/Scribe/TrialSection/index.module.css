@@ -1,0 +1,14 @@
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--sec-background);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.contentWrapper > p {
+  max-width: 600px;
+}
